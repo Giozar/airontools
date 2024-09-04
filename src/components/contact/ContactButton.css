@@ -1,7 +1,7 @@
 .sticky-btn {
     position: fixed;
-    left: 1.25rem;
-    bottom: 6.25rem;
+    left: 20px;
+    bottom: 100px;
     background-color: #0d912b;
     color: #fff;
     padding: 0.75rem 1.5rem;

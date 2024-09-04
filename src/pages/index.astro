@@ -2,12 +2,13 @@
 import Layout from '@layouts/Layout.astro'
 import '../styles/index.css'
 import Waves from '@components/main/Waves.astro'
-import Carousel3D from '@components/carousel/Carousel3D.astro'
 import Announcements from '@components/announcements/Announcements.astro'
 import Footer from '@components/footer/Footer.astro'
 import Header from '@components/header/Header.astro'
 import Hero from '@components/hero/Hero.astro'
 import ContactButton from '@components/contact/ContactButton.astro'
+import Stats from '@components/Stats/Stats.astro'
+import Brand from '@components/brand/Brand.astro'
 ---
 
 <Layout title="AironTools">
@@ -15,22 +16,9 @@ import ContactButton from '@components/contact/ContactButton.astro'
 	<main>
 		<Waves/>
 		<ContactButton/>
-       <Hero/>
-        <section class="stats">
-            <div class="stat-item">
-                <h2>+20 Años</h2>
-                <p>Años de experiencia</p>
-            </div>
-            <div class="stat-item">
-                <h2>+500 Modelos</h2>
-                <p>Modelos de herramientas</p>
-            </div>
-        </section>
-		<section class="brand">
-			<h2>Nuestra Marca</h2>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores culpa, dolorum rem impedit praesentium mollitia repellendus perspiciatis nulla fugiat! Dolore quia animi voluptatem nam est. Neque laudantium recusandae qui in.</p>
-			<Carousel3D/>
-		</section>
+       	<Hero/>
+        <Stats/>
+		<Brand/>
 		<Announcements/>
 		<Footer/>
 	</main>

@@ -1,0 +1,22 @@
+/* Estilo de estadísticas */
+.stats {
+    background-color: rgba(26, 26, 26, 0.7);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+}
+
+.stat-item {
+    text-align: center;
+    margin: 0.3125rem;
+}
+.stat-item h2 {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 0.3125rem;
+}
+
+.stat-item p {
+    margin: 0;
+}
