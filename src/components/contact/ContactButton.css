@@ -1,0 +1,25 @@
+.sticky-btn {
+    position: fixed;
+    left: 1.25rem;
+    bottom: 6.25rem;
+    background-color: #0d912b;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.sticky-btn:hover {
+    background-color: #0a7a23;
+}
+
+.sticky-btn span {
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+}
