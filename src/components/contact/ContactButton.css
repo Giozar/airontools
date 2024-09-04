@@ -1,9 +1,9 @@
 .sticky-btn {
     position: fixed;
     left: 20px;
-    bottom: 100px;
-    background-color: #0d912b;
-    color: #fff;
+    bottom: 10vh;
+    background-color: #13E744;
+    color: #1a1a1a;
     padding: 0.75rem 1.5rem;
     border-radius: 50px;
     display: flex;
@@ -22,4 +22,9 @@
 .sticky-btn span {
     margin-right: 0.5rem;
     font-size: 1.2rem;
+}
+@media (max-width: 1400px) {
+    .sticky-btn {
+        bottom: 8vh;
+    }
 }
