@@ -4,11 +4,14 @@
     margin-top: 50px;
 }
 
-.group{
+.anuncios .group{
     display: flex;
     width: 100%;
     justify-items: center;
     justify-content: center;
+}
+.anuncios .group ul {
+    list-style-type: none;
 }
 .ad-btn {
     display: inline-block;
