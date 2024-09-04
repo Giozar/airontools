@@ -73,7 +73,6 @@
     transform: rotate3d(0, 1, 0, 45deg);
 }
 .carousel-item img {
-    width: 120px;
     height: 100%;
     object-fit: cover;
 }

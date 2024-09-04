@@ -1,6 +1,7 @@
 ---
 import { peopleImage } from "@assets/images/imagePaths";
-import './Announcements.css'
+import './Announcements.css';
+import { Image } from 'astro:assets';
 ---
 
 <section class="anuncios">
@@ -18,7 +19,7 @@ import './Announcements.css'
             </li>    
         </ul>
         <figure>
-            <img src={peopleImage.person1} alt="Herramientas neumáticas" />
+            <Image src={peopleImage.person1} alt="Chica señalando hacia arriba"  width={500} height={500}/>
         </figure>
     </article>
     
