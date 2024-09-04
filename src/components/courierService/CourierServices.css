@@ -15,7 +15,7 @@
 }
 
 .shipping  .shipping-option {
-    background-color: #1a1a1a; 
+    background-color: rgba(26, 26, 26, 0.7);
     border-radius: 0.5rem;
     overflow: hidden;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
