@@ -61,6 +61,9 @@
     font-size: 3rem;
     letter-spacing: -1px;
 }
+.anuncios h3 span{
+    color: #00a8ff;
+}
 .anuncios img {
     transform: rotateY(180deg);
 }
