@@ -1,0 +1,55 @@
+.header {
+    background-color: #1a1a1a;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.1rem;
+    top: 0;
+    position: sticky;
+    z-index: 2000;
+}
+
+.logo img{
+    object-fit: contain;
+}
+
+nav {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 0.5rem;
+    border-radius: 0.625rem;
+    border: none;
+    outline: none;
+}
+
+.login-btn {
+    background-color: #00a8ff;
+    color: #1a1a1a;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 0.3125rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.header .group {
+    display: flex;
+    gap: 0.3125rem;
+}

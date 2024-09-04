@@ -30,24 +30,6 @@ body, html {
     }
 }
 
-.header {
-    background-color: #1a1a1a;
-    color: #fff;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 1.1rem;
-}
-
-.logo img{
-    object-fit: contain;
-}
-
-nav {
-    display: flex;
-    gap: 1rem;
-}
-
 #background-video {
     width: 50%;
     height: 70vh;
@@ -56,41 +38,6 @@ nav {
     aspect-ratio: 3 / 2;
     clip-path: polygon(var(--p) 0, 100% 0, 100% 100%, 0 100%);
     margin-left: -1rem;
-}
-
-.nav a {
-    color: #fff;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-}
-
-.search-bar{
-    position: relative;
-    display: flex;
-    align-items: center;
-}
-
-.search-bar input {
-    padding: 0.5rem;
-    border-radius: 0.625rem;
-    border: none;
-    outline: none;
-}
-
-.login-btn {
-    background-color: #00a8ff;
-    color: #1a1a1a;
-    border: none;
-    padding: 0.6rem 1rem;
-    border-radius: 0.3125rem;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-.header .group {
-    display: flex;
-    gap: 0.3125rem;
 }
 
 section {
@@ -167,7 +114,7 @@ p {
     margin: 0.3125rem;
 }
 
-h2 {
+.brand h2 {
     font-style: italic;
     font-size: 2.3rem;
     margin-bottom: -0.625rem;

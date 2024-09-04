@@ -5,29 +5,13 @@ import Waves from '@components/main/Waves.astro'
 import Carousel3D from '@components/carousel/Carousel3D.astro'
 import Announcements from '@components/announcements/Announcements.astro'
 import Footer from '@components/footer/Footer.astro'
+import Header from '@components/header/Header.astro'
 import {heroVideo} from '../assets/videos/videoPaths'
-import { Image } from 'astro:assets'
 import PhoneIcon from './PhoneIcon.astro'
-import SearchIcon from './SearchIcon.astro'
 ---
 
 <Layout title="AironTools">
-	<header class="header">
-        <div class="logo">
-			<Image src="/logos-airontools/logo-color.png" alt="logoAironTools" width={100} height={100}>
-		</div>
-        <nav class="nav">
-            <a href="#">Herramientas <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg></a>
-            <a href="#">Servicios y soluciones <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg></a>
-        </nav>
-        <div class="group">
-            <div class="search-bar">
-                <input type="text" placeholder="Buscar">
-                <SearchIcon/>
-            </div>
-            <button class="login-btn">Iniciar Sesión</button>
-        </div>
-    </header>
+	<Header/>
 
 	<main>
 		<Waves/>
