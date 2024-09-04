@@ -6,8 +6,8 @@ import Carousel3D from '@components/carousel/Carousel3D.astro'
 import Announcements from '@components/announcements/Announcements.astro'
 import Footer from '@components/footer/Footer.astro'
 import Header from '@components/header/Header.astro'
-import {heroVideo} from '../assets/videos/videoPaths'
 import PhoneIcon from './PhoneIcon.astro'
+import Hero from '@components/hero/Hero.astro'
 ---
 
 <Layout title="AironTools">
@@ -18,18 +18,7 @@ import PhoneIcon from './PhoneIcon.astro'
 		<a href="tel:+123456789" class="sticky-btn">
             <span><PhoneIcon> </span>Contacto
         </a>
-        <section class="hero">
-            <div class="hero-content">
-                <h1>LAS <span>HERRAMIENTAS</span> ELEGIDAS <br> POR LOS <span>PROFESIONALES</span></h1>
-                <p>En AIRON TOOLS nos dedicamos a la fabricación especializada de Herramientas Neumáticas Industriales y Equipos de Torque, así como sus accesorios.</p>
-                <a href="#" class="cta-btn">¡COTIZA AHORA!</a>
-                <a href="#" class="cta-btn-2">Más información</a>
-			</div>
-            <video id="background-video" controls autoplay loop muted>
-            <source src={heroVideo} type="video/mp4">
-            Tu navegador no puede reproducir este video
-            </video>
-        </section>
+       <Hero/>
         <section class="stats">
             <div class="stat-item">
                 <h2>+20 Años</h2>
