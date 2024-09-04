@@ -1,0 +1,122 @@
+---
+import FacebookIcon from "./FacebookIcon.astro";
+import LinkedinIcon from "./LinkedinIcon.astro";
+import YoutubeIcon from "./YoutubeIcon.astro";
+---
+
+<footer>
+    <section class="footer-section">
+        <h3>Productos</h3>
+        <ul>
+            <li>Herramientas de torque</li>
+            <li>Herramientas eléctricas</li>
+            <li>Herramientas especiales</li>
+            <li>Unidades de mantenimiento</li>
+            <li>Instalación neumática</li>
+        </ul>
+    </section>
+    <section class="footer-section">
+        <h3>Soporte</h3>
+        <ul>
+            <li>Catálogo</li>
+            <li>Manuales y fichas técnicas</li>
+            <li>Servicio y soporte</li>
+            <li>Contacto</li>
+        </ul>
+    </section>
+    <section class="footer-section">
+        <h3>Nosotros</h3>
+        <ul>
+            <li>Historia</li>
+            <li>Sucursales</li>
+            <li>Ética empresarial</li>
+        </ul>
+    </section>
+    <section class="registro">
+        <h2>Registro</h2>
+        <p>Regístrate para recibir noticias, ofertas y lo último de nuestros productos por correo electrónico</p>
+        <input type="email" placeholder="tucorreo@dominio.com">
+        <button>Inscribirse</button>
+        <div class="social-icons">
+            <YoutubeIcon/>
+            <LinkedinIcon/>
+            <FacebookIcon/>
+        </div>
+    </section>
+</footer>
+<div class="bottom-bar">
+    <a href="#"><i class="fa fa-arrow-up" aria-hidden="true"></i> Ir a inicio</a>
+    <span>© 2024 Copyright© Airon Tools</span>
+</div>
+
+<style>
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 50px;
+    }
+    .footer-section {
+        padding: 20px;
+        margin-right: 20px;
+    }
+    .footer-section h3 {
+        margin-top: 0;
+    }
+    .footer-section ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    .footer-section li {
+        margin-bottom: 5px;
+    }
+    .registro {
+        padding: 20px;
+        text-align: center;
+        width: 30%;
+    }
+    .registro h2 {
+        margin-top: 0;
+        text-align: left;
+    }
+    .registro input[type="email"] {
+        width: 100%;
+        border: 0;
+        border-radius: 10px;
+        padding: 10px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+    }
+    .registro button {
+        background-color: #2268ed;
+        border-radius: 10px;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        width: 100%;
+    }
+    .social-icons {
+        margin-top: 20px;
+    }
+    .social-icons img {
+        width: 30px;
+        height: 30px;
+        margin-left: 10px;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+    .bottom-bar {
+        background-color: #1a1a1a;
+        color: white;
+        padding: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+</style>
+
+

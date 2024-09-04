@@ -1,0 +1,9 @@
+---
+const {imageSrc, imageAlt, imageTitle} = Astro.props;
+---
+<figure class="carousel-item">
+    <img src={imageSrc} alt={imageAlt} />
+    <div class="text">
+        <h3>{imageTitle}</h3>
+    </div>
+</figure>

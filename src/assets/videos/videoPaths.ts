@@ -1,0 +1,1 @@
+export const heroVideo = '/src/assets/videos/hero/hero-video.mp4';
