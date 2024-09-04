@@ -1,0 +1,72 @@
+<div class="curveWrap">
+    <svg width="100%" height="100%" viewBox="0 0 1200 100" xmlns="http://www.w3.org/2000/svg">
+        <g class="curve" fill="none">
+            <path d="M 0, 60 S 300, -60, 600, 60, 800, -120, 1200 60" />
+            <path d="M 0, 60 S 200, -60, 400, 60, 900, -120, 1200 60" />
+            <path d="M 0, 60 S 200, -70, 400, 70, 800, -120, 1200 60" />
+            <path d="M 0, 60 S 200, -60, 400, 80, 600, -120, 1200 60" />
+        </g>
+    </svg>
+</div>
+
+<style>
+    .curveWrap {
+        position: fixed;
+        top: 0;
+        bottom: 0; 
+        left: 0; 
+        width: 100%; 
+        height: 100vh; 
+        background-color: #152457;
+        z-index: -1; 
+        overflow: hidden; 
+    }
+    .curveWrap .curve {
+        stroke-linecap: round;
+        stroke-opacity: 0.6;
+    }
+    .curveWrap .curve path {
+        transform-origin: center;
+        opacity: 0.5;
+    }
+    .curveWrap .curve path:nth-child(6n + 1) {
+        stroke:  #52a1ce;
+    }
+    .curveWrap .curve path:nth-child(6n + 2) {
+        stroke: #0088c2;
+    }
+    .curveWrap .curve path:nth-child(6n + 3) {
+        stroke:#01308a;
+    }
+    .curveWrap .curve path:nth-child(1) {
+        stroke-width: 16;
+        animation: curve 35s linear 0s infinite;
+    }
+    .curveWrap .curve path:nth-child(2) {
+        stroke-width: 25;
+        animation: curve 35s linear 1.2s infinite;
+    }
+    .curveWrap .curve path:nth-child(3) {
+        stroke-width: 48;
+        animation: curve 35s linear 1.6s infinite;
+    }
+    .curveWrap .curve path:nth-child(4) {
+        stroke-width: 41;
+        animation: curve 35s linear 5.6s infinite;
+    }
+    
+    @keyframes curve {
+        0% {
+            transform: rotateX(0deg) skewY(0deg);
+            stroke-opacity: 0.6;
+        }
+        50% {
+            transform: rotateX(360deg) skewY(8deg);
+            stroke-opacity: 0.2;
+        }
+        100% {
+            transform: rotateX(0deg) skewY(0deg);
+            stroke-opacity: 0.6;
+        }
+    }
+</style>
