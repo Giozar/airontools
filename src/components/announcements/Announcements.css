@@ -56,13 +56,11 @@
 .ad-btn:hover:after{
     width: 100%;
 }
-.anuncios > div > div {
-    width: 40%;
-    grid-area: left;
-}
+
 .anuncios h3{
     font-size: 3rem;
     letter-spacing: -1px;
-    margin: 2rem auto;
-    width: 61%;
+}
+.anuncios img {
+    transform: rotateY(180deg);
 }
