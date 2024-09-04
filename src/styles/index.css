@@ -78,20 +78,11 @@ nav {
     outline: none;
 }
 
-.search-bar::after {
-    position: absolute;
-    right: 0.5rem;
-    content: "\f002";
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 900;
-    color: #1a1a1a;
-}
-
 .login-btn {
     background-color: #00a8ff;
     color: #1a1a1a;
     border: none;
-    padding: 0.5rem 1rem;
+    padding: 0.6rem 1rem;
     border-radius: 0.3125rem;
     cursor: pointer;
     font-weight: bold;
@@ -214,20 +205,9 @@ h2 {
     background-color: #0a7a23;
 }
 
-.sticky-btn i {
+.sticky-btn span {
     margin-right: 0.5rem;
     font-size: 1.2rem;
-}
-
-/* Icono de teléfono */
-.phone-icon::before {
-    content: "\f095";
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 900;
-}
-
-footer {
-    width: 100%;
 }
 
 @media (max-width: 1400px) {
