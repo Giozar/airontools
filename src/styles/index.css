@@ -3,7 +3,29 @@ body, html {
     padding: 0;
     font-family: 'Montserrat', Roboto, Arial, sans-serif;
     color: #fff;
+    font-size: 16px;
 }
+
+@media (max-width: 1400px) {
+    html {
+      font-size: 1.2rem;
+    }
+}
+  
+/* Tabletas*/ 
+@media (max-width: 768px) {
+    html {
+        font-size: 1rem;
+    }
+}
+
+/* Celulares*/ 
+@media (max-width: 450px) {
+    html {
+        font-size: 0.75rem;
+    }
+}
+
 .header {
     background-color: #1a1a1a;
     color: #fff;
@@ -15,28 +37,31 @@ body, html {
 }
 
 .logo img{
-    width: 100px;
+    width: 6.25rem; 
 }
 
 nav {
     display: flex;
     gap: 1rem;
 }
+
 #background-video {
     width: 50%;
     height: 70vh;
     object-fit: cover;
-    --p: 100px; /* control the shape (can be percentage) */
-    aspect-ratio: 3/2;
-      clip-path: polygon(var(--p) 0,100% 0,100% 100%,0 100%);
-    margin-left: -15%;
+    --p: 3rem;
+    aspect-ratio: 3 / 2;
+    clip-path: polygon(var(--p) 0, 100% 0, 100% 100%, 0 100%);
+    margin-left: -1rem;
 }
+
 .nav a {
     color: #fff;
     text-decoration: none;
     display: flex;
     align-items: center;
 }
+
 .search-bar{
     position: relative;
     display: flex;
@@ -45,10 +70,11 @@ nav {
 
 .search-bar input {
     padding: 0.5rem;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     border: none;
-    outline: none; /* Quitar el contorno predeterminado */
+    outline: none;
 }
+
 .search-bar::after {
     position: absolute;
     right: 0.5rem;
@@ -63,20 +89,22 @@ nav {
     color: #1a1a1a;
     border: none;
     padding: 0.5rem 1rem;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
     cursor: pointer;
     font-weight: bold;
 }
-.header .group{
+
+.header .group {
     display: flex;
-    gap: 5px;
+    gap: 0.3125rem;
 }
-section{
+
+section {
     margin: auto;
     max-width: 80vw;
     padding: 0 2rem;
 }
-/* Estilo del héroe */
+
 .hero {
     color: #fff;
     padding: 0 2rem;
@@ -86,36 +114,23 @@ section{
     min-height: 70vh;
     position: relative;
     overflow: hidden;
-    margin-right: 0;
-    padding-right: 0;
     max-width: 90vw;
 }
 
-.hero-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    gap: 10px;
-    height: 100%;
-}
-
-.hero-content > div {
-    max-width: 70%;
-}
-
 .hero h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
-    letter-spacing: -1px;
+    letter-spacing: -0.0625rem;
 }
 
 .hero h1 span {
     color: #00a8ff;
 }
-p{
+
+p {
     font-size: 1.2rem;
 }
+
 .hero p {
     font-size: 1.3rem;
     text-align: justify;
@@ -127,7 +142,7 @@ p{
     display: inline-block;
     text-decoration: none;
     padding: 0.75rem 1.5rem;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
     font-weight: bold;
     box-sizing: border-box;
     transition: background-color 0.3s ease;
@@ -145,54 +160,30 @@ p{
     color: #fff;
     margin-right: 1rem;
 }
-@media (max-width: 1250px) {
-    section{
-        max-width: 100vw;
-    }
-    .hero{
-        padding-right: 0;
-    }
-    .hero h1 {
-        font-size: 3rem;
-    }
-    #background-video {
-        width: 45%;
-        margin-left: -10%;
-    }
-    
-    .hero p{
-        font-size: 1.2rem;
-        text-align: left;
-    }
-    p{
-        font-size: 1rem;
-    }
-}
 /* Estilo de estadísticas */
 .stats {
-    background-color: rgba(26, 26, 26, 0.7); /* Usar rgba para una transparencia sutil */
-    /*background-color: #ffffffbe;
-    color: #1a1a1a;*/
+    background-color: rgba(26, 26, 26, 0.7);
     padding: 1rem;
     display: flex;
     justify-content: space-around;
-    max-width:  100%;
+    max-width: 100%;
 }
 
 .stat-item {
     text-align: center;
-    margin: 5px;
+    margin: 0.3125rem;
 }
-h2{
+
+h2 {
     font-style: italic;
     font-size: 2.3rem;
-    transform: skew(-5deg, 0);
-    margin-bottom: -10px;
+    margin-bottom: -0.625rem;
 }
+
 .stat-item h2 {
     font-size: 2rem;
     margin-top: 0;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.3125rem;
 }
 
 .stat-item p {
@@ -202,8 +193,8 @@ h2{
 /* Botón sticky */
 .sticky-btn {
     position: fixed;
-    left: 20px;
-    bottom: 100px;
+    left: 1.25rem;
+    bottom: 6.25rem;
     background-color: #0d912b;
     color: #fff;
     padding: 0.75rem 1.5rem;
@@ -212,13 +203,13 @@ h2{
     align-items: center;
     text-decoration: none;
     font-weight: bold;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
     z-index: 1000;
     transition: background-color 0.3s ease;
 }
 
 .sticky-btn:hover {
-    background-color: #0a7a23; /* Color más oscuro al pasar el ratón */
+    background-color: #0a7a23;
 }
 
 .sticky-btn i {
@@ -228,10 +219,11 @@ h2{
 
 /* Icono de teléfono */
 .phone-icon::before {
-    content: "\f095"; /* Código del icono de teléfono en FontAwesome */
+    content: "\f095";
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
 }
-footer{
+
+footer {
     width: 100%;
 }
