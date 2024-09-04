@@ -11,20 +11,25 @@ import Stats from '@components/Stats/Stats.astro'
 import Brand from '@components/brand/Brand.astro'
 import Testimonials from '@components/testimonials/Testimonials.astro'
 import Services from '@components/services/Services.astro'
+import CourierServices from '@components/courierService/CourierServices.astro'
 ---
 
 <Layout title="AironTools">
 	<Header/>
 	<main>
-		<Waves/>
+		<!--Boton de contacto flotante -->
 		<ContactButton/>
-       	<Hero/>
-        <Stats/>
-		<Brand/>
-		<Services/>
-		<Announcements/>
-		
-		<Testimonials/>
-		<Footer/>
+		<!--Fondo de olas -->
+		<Waves/>   
+		<!--Contenido de la página -->
+		<Hero/>             
+		<Stats/>            
+		<Brand/>         
+		<Announcements/>        
+		<Services/>        
+		<Testimonials/>    
+		<CourierServices/>
+		<!--<ContactUs/>-->             
+		<Footer/>           
 	</main>
 </Layout>
