@@ -1,0 +1,21 @@
+---
+import '@components/services/Services.css'
+import { peopleImage } from "@assets/images/imagePaths";
+import { Image } from 'astro:assets';
+---
+
+<section class="services">
+    
+    <Image src={peopleImage.person1} alt="Chica señalando hacia arriba"  width={500} height={500}/>
+    <div>
+        <h3>Nuestros Servicios</h3>
+        <ul>
+            <li>Servicio Técnico</li>
+            <li>Refacciones</li>
+            <li>Calibración</li>
+            <li>Manuales y diagramas</li>
+            <li>Adaptaciones de herramientas</li>
+            <li>Accesorios</li>
+        </ul>
+    </div>
+</section>

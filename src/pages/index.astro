@@ -2,64 +2,35 @@
 import Layout from '@layouts/Layout.astro'
 import '../styles/index.css'
 import Waves from '@components/main/Waves.astro'
-import Carousel3D from '@components/carousel/Carousel3D.astro'
 import Announcements from '@components/announcements/Announcements.astro'
 import Footer from '@components/footer/Footer.astro'
-import {heroVideo} from '../assets/videos/videoPaths'
+import Header from '@components/header/Header.astro'
+import Hero from '@components/hero/Hero.astro'
+import ContactButton from '@components/contact/ContactButton.astro'
+import Stats from '@components/Stats/Stats.astro'
+import Brand from '@components/brand/Brand.astro'
+import Testimonials from '@components/testimonials/Testimonials.astro'
+import Services from '@components/services/Services.astro'
+import CourierServices from '@components/courierService/CourierServices.astro'
 ---
 
 <Layout title="AironTools">
-	<header class="header">
-        <div class="logo">
-			<img src="/logos-airontools/logo-color.png">
-		</div>
-        <nav class="nav">
-            <a href="#">Herramientas <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg></a>
-            <a href="#">Servicios y soluciones <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg></a>
-        </nav>
-        <div class="group">
-            <div class="search-bar">
-                <input type="text" placeholder="Buscar">
-            </div>
-            <button class="login-btn">Iniciar Sesión</button>
-        </div>
-    </header>
-
+	<Header/>
 	<main>
-		<Waves/>
-		<a href="tel:+123456789" class="sticky-btn">
-            <i class="phone-icon"></i> Contacto
-        </a>
-        <section class="hero">
-            <div class="hero-content">
-                <div>
-                    <h1>LAS <span>HERRAMIENTAS</span> ELEGIDAS <br> POR LOS <span>PROFESIONALES</span></h1>
-                    <p>En AIRON TOOLS nos dedicamos a la fabricación especializada de Herramientas Neumáticas Industriales y Equipos de Torque, así como sus accesorios.</p>
-                    <a href="#" class="cta-btn">¡COTIZA AHORA!</a>
-                    <a href="#" class="cta-btn-2">Más información</a>
-                </div>
-            	<video id="background-video" controls autoplay loop muted>
-				<source src={heroVideo} type="video/mp4">
-				Tu navegador no puede reproducir este video
-				</video>
-			</div>
-        </section>
-        <section class="stats">
-            <div class="stat-item">
-                <h2>+20 Años</h2>
-                <p>Años de experiencia</p>
-            </div>
-            <div class="stat-item">
-                <h2>+500 Modelos</h2>
-                <p>Modelos de herramientas</p>
-            </div>
-        </section>
-		<section class="brand">
-			<h2>Nuestra Marca</h2>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores culpa, dolorum rem impedit praesentium mollitia repellendus perspiciatis nulla fugiat! Dolore quia animi voluptatem nam est. Neque laudantium recusandae qui in.</p>
-			<Carousel3D/>
-		</section>
-		<Announcements/>
-		<Footer/>
+		
+		<!--Boton de contacto flotante -->
+		<ContactButton/>
+		<!--Fondo de olas -->
+		<Waves/>   
+		<!--Contenido de la página -->
+		<Hero/>             
+		<Stats/>            
+		<Brand/>         
+		<Announcements/>        
+		<Services/>        
+		<Testimonials/>    
+		<CourierServices/>
+		<!--<ContactUs/>-->  
+		<Footer/>           
 	</main>
 </Layout>

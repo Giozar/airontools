@@ -1,24 +1,26 @@
 ---
 import { peopleImage } from "@assets/images/imagePaths";
-import './Announcements.css'
+import './Announcements.css';
+import { Image } from 'astro:assets';
+import RightArrow from "./RightArrow.astro";
 ---
 
 <section class="anuncios">
-    <h3>No solo somos herramientas,  <br> ¡Somos aliados para tu industria!</h3>
+    <h3>No solo somos <span>herramientas</span>,<br> ¡Somos <span>aliados</span> para tu industria!</h3>
     <article class="group">
         <ul>
             <li>
-                <a class="ad-btn" href="#"><span>¡Conoce nuestro conversor de unidades! <i class="fas fa-arrow-right"></i></span></a>
+                <a class="ad-btn" href="#"><span>¡Conoce nuestro conversor de unidades! <RightArrow/></span></a>
             </li>
             <li>
-                <a class="ad-btn" href="#"><span>¡Conoce nuestro conversor de unidades! <i class="fas fa-arrow-right"></i></span></a>
+                <a class="ad-btn" href="#"><span>¡Conoce nuestro conversor de unidades! <RightArrow/></span></a>
             </li>
             <li>
-                <a class="ad-btn" href="#"><span>¡Conoce nuestro conversor de unidades! <i class="fas fa-arrow-right"></i></span></a>
+                <a class="ad-btn" href="#"><span>¡Conoce nuestro conversor de unidades! <RightArrow/></span></a>
             </li>    
         </ul>
         <figure>
-            <img src={peopleImage.person1} alt="Herramientas neumáticas" />
+            <Image src={peopleImage.person2} alt="Chica señalando hacia arriba"  width={500} height={500}/>
         </figure>
     </article>
     

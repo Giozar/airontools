@@ -1,0 +1,46 @@
+.sticky-btn {
+    position: fixed;
+    left: 20px;
+    bottom: 9vh;
+    background-color: #13E744;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+    color: #1a1a1a;
+    text-align: center;
+}
+
+.sticky-btn:hover {
+    background-color: #0a7a23;
+}
+
+.sticky-btn .icon {
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+}
+.sticky-btn .text { 
+    font-weight: bold;
+    color: #1a1a1a;
+    font-size: 1.1rem;
+}
+@media (max-width: 1400px) {
+    .sticky-btn {
+        margin-left: -10px;
+    }
+    .sticky-btn .icon {
+        margin-right: 0;
+    }
+    .sticky-btn .text { 
+        display: none;
+    }
+}
+@media (max-width: 1400px) {
+    .sticky-btn {
+        margin-left: -10px;
+    }
+}

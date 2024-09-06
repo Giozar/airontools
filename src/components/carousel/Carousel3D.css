@@ -30,7 +30,7 @@
     top: 50%;
     margin-left: -125px;
     margin-top: -75px;  
-    background-color: #018bd1;
+    background-color: #044197;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -45,7 +45,7 @@
     height: 100px;
     top: 60%;
     margin-top: -75px;  
-    background-color: #00a8ff;
+    background-color: #044197;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -62,7 +62,7 @@
     right: 0;
     top: 60%;
     margin-top: -75px;  
-    background-color: #00a8ff;
+    background-color: #044197;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -73,7 +73,6 @@
     transform: rotate3d(0, 1, 0, 45deg);
 }
 .carousel-item img {
-    width: 120px;
     height: 100%;
     object-fit: cover;
 }
