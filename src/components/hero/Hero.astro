@@ -1,6 +1,7 @@
 ---
-import {heroVideo} from '@assets/videos/videoPaths'
+// import {heroVideo} from '@assets/videos/videoPaths'
 import '@components/hero/Hero.css'
+import Animation from '@components/animation/animation.astro'
 ---
 <section class="hero">
     <div class="hero-content">
@@ -9,8 +10,9 @@ import '@components/hero/Hero.css'
         <a href="#" class="primary-button">¡COTIZA AHORA!</a>
         <a href="#" class="secondary-button">Más información</a>
     </div>
-    <video id="background-video" controls autoplay loop muted>
+    <Animation/>  
+    <!-- <video id="background-video" controls autoplay loop muted>
     <source src={heroVideo} type="video/mp4">
     Tu navegador no puede reproducir este video
-    </video>
+    </video>-->
 </section>
