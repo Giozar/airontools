@@ -1,0 +1,49 @@
+.show{
+    display: flex;
+}
+.show-hero{
+    width: 50%;
+    background-color: #1a1a1a;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.show-hero h1{
+    margin: 0;
+}
+.show-hero > div{
+    width: 70%;
+}
+.show-hero p{
+    font-size: 1rem;
+}
+.show-content{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    list-style: none;
+    gap: 1rem;
+}
+.show-content .item img{
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+.show-content .item{
+    border-radius: 10px;
+    text-align: center;
+    background-color: #1a1a1a;
+}
+.show-content .item hr{
+    color: #0088c2;
+}
+.show-content .item > div{
+    
+    padding: 1rem;
+    padding-top: 0.5rem;
+}
+.show-content .item a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}

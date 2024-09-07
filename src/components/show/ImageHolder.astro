@@ -1,0 +1,14 @@
+---
+import Image from "astro/components/Image.astro";
+
+const {imageSrc, imageAlt, imageTitle} = Astro.props;
+---
+<li class="item">
+    <Image src={imageSrc} alt={imageAlt}  width={200} height={200}/>
+    <hr>
+    <div>
+        
+    <a href="shop">{imageTitle}</a>
+    </div>
+</li>
+    

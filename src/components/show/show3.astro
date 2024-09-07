@@ -1,0 +1,111 @@
+---
+import '@components/show/show3.css'
+import ImageHolder from './ImageHolder.astro'
+import imagen from '../../assets/images/h2.png';
+import HorizontalCarousel from '@components/horizonalCarousel/horizontalCarousel.astro';
+/*import { Image } from 'astro:assets';
+import Carousel from './carousel.astro';*/
+---
+<section class="show">
+    <div class="show-holder">
+        <!-- Categorias -->
+        <div class="show-hero">
+            <div>
+                <h1>Categoria</h1>
+                <hr>
+                <ol class="checklist">
+                    <li><input type="checkbox" id="category1"><label for="category1">Categoria 1</label></li>
+                    <li><input type="checkbox" id="category2"><label for="category2">Categoria 1</label></li>
+                    <li><input type="checkbox" id="category3"><label for="category3">Categoria 1</label></li>
+                    <li><input type="checkbox" id="category4"><label for="category4">Categoria 1</label></li>
+                    <li><input type="checkbox" id="category5"><label for="category5">Categoria 1</label></li>
+                    <li><input type="checkbox" id="category6"><label for="category6">Categoria 1</label></li>
+                    <li><input type="checkbox" id="category7"><label for="category7">Categoria 1</label></li>
+                    <li><input type="checkbox" id="category8"><label for="category8">Categoria 1</label></li>
+                </ol>
+            </div>
+        </div>
+        <div class="show-hero">
+            <div>
+                <h1>Especificaciones</h1>
+                <hr>
+                <ol class="checklist">
+                    <li><input type="checkbox" id="category1"><label for="category1">Categoria 1</label></li>
+                    <li><input type="checkbox" id="category2"><label for="category2">Categoria 1</label></li>
+                    <li><input type="checkbox" id="category3"><label for="category3">Categoria 1</label></li>
+                    <li><input type="checkbox" id="category4"><label for="category4">Categoria 1</label></li>
+                    <li><input type="checkbox" id="category5"><label for="category5">Categoria 1</label></li>
+                 </ol>
+            </div>
+        </div>
+
+        <!-- Formas de envio -->
+        <div class="show-hero">
+            <div>
+                <h1>Formas de envio</h1>
+                <hr>
+                <ol class="checklist">
+                    <li><input type="checkbox" id="shipping1"><label for="shipping1">Envio 1</label></li>
+                    <li><input type="checkbox" id="shipping2"><label for="shipping2">Envio 1</label></li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Información adicional -->
+        <div class="show-hero">
+            <div>
+                <h1>Más cosas por decidir</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde quae cupiditate recusandae iure amet magni odio, fugit atque consectetur assumenda ipsum dolor harum numquam sunt facilis nesciunt! Quam, doloribus repellat?</p>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <!-- Anuncio -->
+        <div class="show-content-ad">
+            <div>
+                <h1>Herramientas Neumáticas o anuncio</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde quae cupiditate recusandae iure amet magni odio, fugit atque consectetur assumenda ipsum dolor harum numquam sunt facilis nesciunt! Quam, doloribus repellat?</p>
+            </div>
+        </div>
+        <HorizontalCarousel/>
+        <!-- Información de Familia -->
+        <div class="header-pag">
+            <div>
+                <h1>Familia</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde quae cupiditate recusandae iure amet magni odio, fugit atque consectetur assumenda ipsum dolor harum numquam sunt facilis nesciunt! Quam, doloribus repellat?</p>
+            </div>
+        </div>
+        
+        <!-- Controles -->
+            <div class="controls">
+                <div class="search-box">
+                    <input type="text" id="search" placeholder="Buscar...">
+                    <button type="button">Buscar</button>
+                </div>
+                <div class="sort">
+                    <label for="sort">Ordenar por:</label>
+                    <select id="sort">
+                        <option value="name">Nombre</option>
+                        <option value="date">Fecha</option>
+                        <option value="price">Precio</option>
+                    </select>
+                </div>
+                <div class="pagination">
+                    <button type="button" class="prev">‹ Anterior</button>
+                    <button type="button" class="next">Siguiente ›</button>
+                </div>
+            </div>
+        
+
+        <!-- Contenido -->
+        <ol class="show-content">
+            <ImageHolder imageSrc={imagen} imageAlt='Herramientas de balancines' imageTitle='Accesorios' />
+            <ImageHolder imageSrc={imagen} imageAlt='Herramientas de balancines' imageTitle='Atornilladores' />
+            <ImageHolder imageSrc={imagen} imageAlt='Herramientas de balancines' imageTitle='Clavadoras' />
+            <ImageHolder imageSrc={imagen} imageAlt='Herramientas de balancines' imageTitle='Compresor' />
+            <ImageHolder imageSrc={imagen} imageAlt='Herramientas de balancines' imageTitle='Engrapadoras' />
+            <!-- Repetir los elementos según sea necesario -->
+        </ol>
+    </div>
+</section>

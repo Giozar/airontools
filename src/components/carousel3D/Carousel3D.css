@@ -10,6 +10,7 @@
     height: 300px;
     overflow: hidden;
     perspective: 1100px;
+    user-select: none;
 }
 
 .carousel {
@@ -82,6 +83,7 @@
     color: #ffffff;
     text-align: left;
     flex: 1;
+    user-select: all;
 }
 /*
 .carousel-item img {
