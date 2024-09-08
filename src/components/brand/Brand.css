@@ -1,5 +1,33 @@
-.brand h2 {
+/* Brand Section */
+.brand {
+    padding: 2rem; /* Ajusta el espaciado del bloque */
+}
+
+/* Brand Heading */
+.brand__heading {
     font-style: italic;
-    font-size: 2.3rem;
-    margin-bottom: -0.625rem;
+    font-size: clamp(1.5rem, 4vw, 2.3rem); /* Tamaño de fuente adaptable */
+    margin-bottom: clamp(1rem, 1vw, 0.625rem); /* Margen inferior adaptable */
+}
+
+/* Brand Paragraph */
+.brand__paragraph {
+    font-size: clamp(1rem, 2vw, 1.2rem); /* Tamaño de fuente adaptable para el párrafo */
+    line-height: 1.6; /* Mejora la legibilidad */
+    margin-top: 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .brand {
+        padding: 1rem; /* Ajusta el espaciado para pantallas más pequeñas */
+    }
+
+    .brand__heading {
+        font-size: clamp(1.25rem, 4vw, 2rem); /* Ajusta el tamaño de la fuente del encabezado */
+    }
+
+    .brand__paragraph {
+        font-size: clamp(0.875rem, 2vw, 1rem); /* Ajusta el tamaño de la fuente del párrafo */
+    }
 }

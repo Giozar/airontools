@@ -1,0 +1,117 @@
+/* Block: Footer */
+.footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2rem;
+    color: white;
+}
+
+/* Element: Footer Section */
+.footer__section {
+    padding: 1rem;
+    margin-right: 1rem;
+    flex: 1;
+}
+
+/* Element: Footer Section Title */
+.footer__section-title {
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+/* Element: Footer Section List */
+.footer__section-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer__section-list-item {
+    margin-bottom: 0.5rem;
+}
+
+/* Element: Registration Section */
+.footer__registration {
+    padding: 1rem;
+    text-align: center;
+    width: 30%;
+}
+
+/* Element: Registration Title */
+.footer__registration-title {
+    margin-top: 0;
+    text-align: left;
+    font-size: 1.75rem;
+}
+
+/* Element: Registration Description */
+.footer__registration-description {
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+/* Element: Registration Input */
+.footer__registration-input {
+    width: 100%;
+    border: 0;
+    border-radius: 0.625rem;
+    padding: 0.625rem;
+    margin-bottom: 0.625rem;
+    box-sizing: border-box;
+}
+
+/* Element: Registration Button */
+.footer__registration-button {
+    background-color: #2268ed;
+    border-radius: 0.625rem;
+    color: white;
+    border: none;
+    padding: 0.625rem 1.25rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Element: Social Icons */
+.footer__social-icons {
+    margin-top: 1.25rem;
+}
+
+.footer__social-icon {
+    width: 1.875rem;
+    height: 1.875rem;
+    margin-left: 0.625rem;
+}
+
+/* Block: Bottom Bar */
+.bottom-bar {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 1.875rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Element: Bottom Bar Link */
+.bottom-bar__link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: row;
+    }
+
+    .footer__section {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .footer__registration {
+        width: 100%; /* Full width on smaller screens */
+        margin-top: 1rem;
+    }
+}

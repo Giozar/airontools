@@ -3,20 +3,50 @@ import { Image } from 'astro:assets'
 import SearchIcon from './SearchIcon.astro'
 import '@components/header/Header.css'
 ---
-
 <header class="header">
-    <div class="logo">
-        <Image src="/logos-airontools/logo-color.png" alt="logoAironTools" width={100} height={100}>
+    <div class="header__logo">
+        <Image src="/logos-airontools/logo-color.png" alt="logoAironTools" width={100} height={90}>
     </div>
-    <nav class="nav">
-        <a href="#" >Herramientas <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg></a>
-        <a href="#">Servicios y soluciones <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg></a>
+    <button class="header__hamburger" aria-label="Toggle navigation">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="header__hamburger-icon">
+            <path d="M3 12h18M3 6h18M3 18h18"/>
+        </svg>
+    </button>
+    <nav class="header__nav">
+        <a href="#" class="header__nav-link">Herramientas 
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="header__nav-icon">
+                <path d="m6 9 6 6 6-6"/>
+            </svg>
+        </a>
+        <a href="#" class="header__nav-link">Servicios y soluciones 
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="header__nav-icon">
+                <path d="m6 9 6 6 6-6"/>
+            </svg>
+        </a>
     </nav>
-    <div class="group">
-        <div class="search-bar">
-            <input type="text" placeholder="Buscar">
+    <div class="header__group">
+        <div class="header__search-bar">
+            <input type="text" class="header__search-bar-input" placeholder="Buscar">
             <SearchIcon/>
         </div>
-        <button class="login-btn">Iniciar Sesión</button>
+        <button class="header__login-btn">Iniciar Sesión</button>
     </div>
 </header>
+<script>
+   // Espera a que el contenido del documento esté completamente cargado
+document.addEventListener('DOMContentLoaded', () => {
+    // Selecciona el botón de hamburguesa y el menú de navegación
+    const hamburger = document.querySelector<HTMLElement>('.header__hamburger');
+    const nav = document.querySelector<HTMLElement>('.header__nav');
+
+    // Asegúrate de que los elementos existan antes de añadir eventos
+    if (hamburger && nav) {
+        // Añade un evento de clic al botón de hamburguesa
+        hamburger.addEventListener('click', () => {
+            // Alterna la clase 'active' en el menú de navegación
+            nav.classList.toggle('active');
+        });
+    }
+});
+</script>
+    
