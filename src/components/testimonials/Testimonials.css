@@ -1,37 +1,40 @@
-/* Base styles for the testimonials section */
+/* Block: Testimonials */
 .testimonials {
     padding: 2rem;
 }
 
-.title {
+/* Element: Title */
+.testimonials__title {
     text-align: center;
     margin-bottom: 2rem;
 }
 
-.title h3 {
+.testimonials__title h3 {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
     font-style: italic;
 }
 
-.testimonial {
+/* Element: Testimonial */
+.testimonials__testimonial {
     border-radius: 0.5rem; /* Rounded corners */
     padding: 2rem;
     margin-bottom: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
-.testimonial h4 {
+.testimonials__testimonial h4 {
     font-size: 1.5rem;
     font-style: italic;
     margin-bottom: 0.5rem;
 }
 
-.testimonial p {
+.testimonials__testimonial p {
     font-size: 1rem;
     margin-bottom: 0.5rem;
 }
 
-.testimonial span {
+.testimonials__testimonial span {
     display: block;
     font-size: 1rem;
     color: #80cbf2;
@@ -39,32 +42,34 @@
     font-weight: bold;
 }
 
+/* Responsive Styles for Tablets and Larger Screens */
 @media (min-width: 768px) {
     .testimonials {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Single column layout */
         gap: 1.5rem;
     }
     
-    .testimonial:nth-of-type(1) {
-        grid-column: 1 / -1;
+    .testimonials__testimonial:nth-of-type(1) {
+        grid-column: 1 / -1; /* Full width for the first testimonial */
     }
     
-    .testimonial:nth-of-type(n+2) {
-        grid-column: span 1;
+    .testimonials__testimonial:nth-of-type(n+2) {
+        grid-column: span 1; /* Single column for the rest */
     }
 }
 
+/* Responsive Styles for Desktops and Larger Screens */
 @media (min-width: 1200px) {
     .testimonials {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr); /* Two columns layout */
     }
     
-    .testimonial:nth-of-type(1) {
-        grid-column: 1 / -1;
+    .testimonials__testimonial:nth-of-type(1) {
+        grid-column: 1 / -1; /* Full width for the first testimonial */
     }
     
-    .testimonial:nth-of-type(n+2) {
-        grid-column: span 1;
+    .testimonials__testimonial:nth-of-type(n+2) {
+        grid-column: span 1; /* Single column for the rest */
     }
 }

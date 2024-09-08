@@ -2,7 +2,7 @@
     position: fixed;
     left: 20px;
     bottom: 9vh;
-    background-color: #13E744;
+    background-color: #13e744;
     padding: 0.75rem 1.5rem;
     border-radius: 50px;
     display: flex;
@@ -15,32 +15,40 @@
     text-align: center;
 }
 
+/* Sticky Button Hover Effect */
 .sticky-btn:hover {
     background-color: #0a7a23;
 }
 
-.sticky-btn .icon {
+/* Sticky Button Icon */
+.sticky-btn__icon {
     margin-right: 0.5rem;
     font-size: 1.2rem;
 }
-.sticky-btn .text { 
+
+/* Sticky Button Text */
+.sticky-btn__text { 
     font-weight: bold;
     color: #1a1a1a;
     font-size: 1.1rem;
 }
+
+/* Responsive Styles for screens up to 1400px */
 @media (max-width: 1400px) {
     .sticky-btn {
         margin-left: -10px;
     }
-    .sticky-btn .icon {
+    .sticky-btn__icon {
         margin-right: 0;
     }
-    .sticky-btn .text { 
+    .sticky-btn__text { 
         display: none;
     }
 }
-@media (max-width: 1400px) {
+@media (max-width: 450px) {
     .sticky-btn {
-        margin-left: -10px;
+        left: 85vw;
+        bottom: 20vh;
     }
+    
 }

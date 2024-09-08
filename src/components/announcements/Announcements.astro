@@ -5,24 +5,22 @@ import { Image } from 'astro:assets';
 import RightArrow from "./RightArrow.astro";
 ---
 
-<section class="anuncios">
-    <h3>No solo somos <span>herramientas</span>,<br> ¡Somos <span>aliados</span> para tu industria!</h3>
-    <article class="group">
+<section class="section anuncios">
+    <h3 class="anuncios__heading">No solo somos <span>herramientas</span>,<br> ¡Somos <span>aliados</span> para tu industria!</h3>
+    <article class="anuncios__group">
         <ul>
             <li>
-                <a class="ad-btn" href="#"><span>¡Conoce nuestro conversor de unidades! <RightArrow/></span></a>
+                <a class="anuncios__btn" href="#"><span>¡Conoce nuestro conversor de unidades! <RightArrow/></span></a>
             </li>
             <li>
-                <a class="ad-btn" href="#"><span>¡Conoce nuestro conversor de unidades! <RightArrow/></span></a>
+                <a class="anuncios__btn" href="#"><span>¡Conoce nuestro conversor de unidades! <RightArrow/></span></a>
             </li>
             <li>
-                <a class="ad-btn" href="#"><span>¡Conoce nuestro conversor de unidades! <RightArrow/></span></a>
+                <a class="anuncios__btn" href="#"><span>¡Conoce nuestro conversor de unidades! <RightArrow/></span></a>
             </li>    
         </ul>
-        <figure>
-            <Image src={peopleImage.person2} alt="Chica señalando hacia arriba"  width={500} height={500}/>
+        <figure class="anuncios__image">
+            <Image src={peopleImage.person2} alt="Chica señalando hacia arriba" width={500} height={500}/>
         </figure>
     </article>
-    
-    
 </section>
