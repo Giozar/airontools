@@ -2,33 +2,33 @@
 import '@components/services/Services.css'
 import { Image } from 'astro:assets';
 ---
-<section class="services">
-    <div class="container">
-        <h3>Nuestros Servicios</h3>
-        <ul>
-            <li>
-                <Image src={'https://www.bosch-professional.com/mx/media/professional/service/after_sales_service/technical_service/kv_technical_service_1920x768.jpg'} alt="Chica señalando hacia arriba"  width={200} height={200}/>
-                <h4>Servicio Técnico</h4>
+<section class="section services">
+    <div class="services__container">
+        <h3 class="services__heading">Nuestros Servicios</h3>
+        <ul class="services__list">
+            <li class="services__item">
+                <Image src={'https://www.bosch-professional.com/mx/media/professional/service/after_sales_service/technical_service/kv_technical_service_1920x768.jpg'} alt="Servicio Técnico" class="services__item-image" width={200} height={200}/>
+                <h4 class="services__item-title">Servicio Técnico</h4>
             </li>
-            <li>
-                <Image src={'https://www.truper.com/media/wysiwyg/home/REFACCIONES.jpg'} alt="Chica señalando hacia arriba"  width={200} height={200}/>
-                <h4>Refacciones</h4>
+            <li class="services__item">
+                <Image src={'https://www.truper.com/media/wysiwyg/home/REFACCIONES.jpg'} alt="Refacciones" class="services__item-image" width={200} height={200}/>
+                <h4 class="services__item-title">Refacciones</h4>
             </li>
-            <li>
-                <Image src={'https://www.bloginstrumentacion.com/files/2017/05/calibracion-manometros-wika.jpg'} alt="Chica señalando hacia arriba"  width={200} height={200}/>
-                <h4>Calibración</h4>
+            <li class="services__item">
+                <Image src={'https://www.bloginstrumentacion.com/files/2017/05/calibracion-manometros-wika.jpg'} alt="Calibración" class="services__item-image" width={200} height={200}/>
+                <h4 class="services__item-title">Calibración</h4>
             </li>
-            <li>
-                <Image src={'https://concepto.de/wp-content/uploads/2023/01/manual-texto-documento.jpg'} alt="Chica señalando hacia arriba"  width={200} height={200}/>
-                <h4>Manuales y diagramas</h4>
+            <li class="services__item">
+                <Image src={'https://concepto.de/wp-content/uploads/2023/01/manual-texto-documento.jpg'} alt="Manuales y diagramas" class="services__item-image" width={200} height={200}/>
+                <h4 class="services__item-title">Manuales y diagramas</h4>
             </li>
-            <li>
-                <Image src={'https://slyg-block.com/wp-content/uploads/2023/03/maq01.jpg'} alt="Chica señalando hacia arriba"  width={200} height={200}/>
-                <h4>Adaptaciones de herramientas</h4>
+            <li class="services__item">
+                <Image src={'https://slyg-block.com/wp-content/uploads/2023/03/maq01.jpg'} alt="Adaptaciones de herramientas" class="services__item-image" width={200} height={200}/>
+                <h4 class="services__item-title">Adaptaciones de herramientas</h4>
             </li>
-            <li>
-                <Image src={'https://m.media-amazon.com/images/I/71bGVFWIQSL.jpg'} alt="Chica señalando hacia arriba"  width={200} height={200}/>
-                <h4>Accesorios</h4>
+            <li class="services__item">
+                <Image src={'https://m.media-amazon.com/images/I/71bGVFWIQSL.jpg'} alt="Accesorios" class="services__item-image" width={200} height={200}/>
+                <h4 class="services__item-title">Accesorios</h4>
             </li>
         </ul>
     </div>

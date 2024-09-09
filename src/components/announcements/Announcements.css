@@ -1,44 +1,50 @@
-.anuncios{
+/* Anuncios Block */
+.anuncios {
     margin: auto;
     padding: 0 2rem;
     margin-top: 50px;
 }
 
-.anuncios .group{
+/* Group Element within Anuncios Block */
+.anuncios__group {
     display: flex;
     width: 100%;
-    justify-items: center;
     justify-content: center;
 }
-.anuncios .group ul {
+
+/* List within Group Element */
+.anuncios__group ul {
     list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
-.ad-btn {
+
+/* Advertisement Button */
+.anuncios__btn {
     display: inline-block;
     text-decoration: none;
-    padding: 0.75rem 1.5rem;
+    padding: 1.5rem;
     border-radius: 5px;
     font-weight: bold;
     box-sizing: border-box;
-    transition: background-color 0.3s ease;
+    transition: all 0.35s;
     font-size: 1.2rem;
     background-color: #1a1a1a;
     color: #fff;
     margin-right: 1rem;
     margin-top: 0.5rem;
-    padding: 1.5rem;
-    transition: all .35s;
     letter-spacing: 2px;
     text-align: center;
     position: relative;
+    overflow: hidden;
 }
 
-.ad-btn span{
+.anuncios__btn span {
     position: relative;
     z-index: 2;
 }
 
-.ad-btn:after{
+.anuncios__btn:after {
     position: absolute;
     content: "";
     top: 0;
@@ -46,24 +52,54 @@
     width: 0;
     height: 100%;
     background: #00a8ff;
-    transition: all .35s;
+    transition: all 0.35s;
 }
 
-.ad-btn:hover{
+.anuncios__btn:hover {
     color: #1a1a1a;
 }
 
-.ad-btn:hover:after{
+.anuncios__btn:hover:after {
     width: 100%;
 }
 
-.anuncios h3{
-    font-size: 3rem;
+/* Heading within Anuncios Block */
+.anuncios__heading {
+    font-size: clamp(2rem, 5vw, 3rem); /* Responsive font size */
     letter-spacing: -1px;
 }
-.anuncios h3 span{
+
+.anuncios__heading span {
     color: #00a8ff;
 }
-.anuncios img {
+
+/* Image within Anuncios Block */
+.anuncios__image {
+    width: 50%;
+    height: 100%;
+}
+.anuncios__image img {
+    width: 100%; /* Adjust width to fit the container */
+    max-width: 100%; /* Ensure image does not exceed container width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image covers the container */
+    border-radius: 10px; /* Optional: Add rounded corners to the image */
     transform: rotateY(180deg);
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .anuncios__group {
+        flex-direction: column; /* Stack the list and image vertically on smaller screens */
+        gap: 1rem; /* Reduce gap between list and image */
+    }
+}
+@media (max-width: 768px) {
+    .anuncios__heading {
+        font-size: clamp(1.5rem, 4vw, 2rem); /* Responsive font size for smaller screens */
+    }
+
+    .anuncios__btn {
+        font-size: clamp(1rem, 3vw, 1.2rem); /* Responsive font size for buttons */
+    }
 }

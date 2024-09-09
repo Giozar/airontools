@@ -7,16 +7,20 @@
     max-width: 100%;
 }
 
-.stat-item {
+/* Elementos de estadísticas */
+.stats__item {
     text-align: center;
     margin: 0.3125rem;
 }
-.stat-item h2 {
-    font-size: 2rem;
+
+/* Títulos dentro de los elementos de estadísticas */
+.stats__item-heading {
+    font-size: clamp(1.5rem, 4vw, 2rem); /* Responsive font size */
     margin-top: 0;
     margin-bottom: 0.3125rem;
 }
 
-.stat-item p {
+/* Párrafos dentro de los elementos de estadísticas */
+.stats__item-text {
     margin: 0;
 }

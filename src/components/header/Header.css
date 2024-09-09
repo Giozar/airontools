@@ -1,45 +1,55 @@
+/* Header */
 .header {
-    background: linear-gradient( rgba(26, 26, 26, 0.9),rgba(26, 26, 26, 0.7));
+    background: linear-gradient(rgba(26, 26, 26, 0.9), rgba(26, 26, 26, 0.7));
     color: #fff;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    font-size: 1.1rem;
+    font-size: clamp(0.875rem, 1vw + 0.5rem, 1.1rem); /* Tamaño de fuente adaptable */
     top: 0;
     position: sticky;
     z-index: 2000;
-    height: 80px;
-}
-.logo img{
-    object-fit: contain;
+    padding: 0.5rem 1rem; /* Ajustado para reducir la altura */
+
 }
 
-nav {
+/* Logo */
+.header__logo img {
+    height: clamp(40px, 5vw, 50px); /* Tamaño del logo adaptable */
+    width: auto;
+}
+
+/* Navigation */
+.header__nav {
     display: flex;
     gap: 1rem;
 }
 
-.nav a {
+.header__nav-link {
     color: #fff;
     text-decoration: none;
     display: flex;
     align-items: center;
+    font-size: clamp(0.875rem, 1vw + 0.5rem, 1rem); /* Tamaño de fuente adaptable para enlaces */
 }
 
-.search-bar{
+/* Search Bar */
+.header__search-bar {
     position: relative;
     display: flex;
     align-items: center;
 }
 
-.search-bar input {
-    padding: 0.5rem;
+.header__search-bar-input {
+    padding: 0.3rem;
     border-radius: 0.625rem;
     border: none;
     outline: none;
+    font-size: clamp(0.75rem, 1vw + 0.5rem, 1rem); /* Tamaño de fuente adaptable para el input */
 }
 
-.login-btn {
+/* Login Button */
+.header__login-btn {
     background-color: #00a8ff;
     color: #1a1a1a;
     border: none;
@@ -47,9 +57,47 @@ nav {
     border-radius: 0.3125rem;
     cursor: pointer;
     font-weight: bold;
+    font-size: clamp(0.875rem, 1vw + 0.5rem, 1rem); /* Tamaño de fuente adaptable para el botón */
 }
 
-.header .group {
+/* Group */
+.header__group {
     display: flex;
     gap: 0.3125rem;
+}
+
+/* Hamburger Button */
+.header__hamburger {
+    display: none; /* Ocultado por defecto */
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: clamp(1rem, 2vw + 0.5rem, 1.5rem); /* Tamaño de fuente adaptable para el icono de hamburguesa */
+}
+
+.header__hamburger-icon {
+    color: #fff;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .header__nav {
+        display: none; /* Oculta el menú de navegación por defecto en pantallas pequeñas */
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Ajusta según la altura del header */
+        right: 0;
+        background: rgba(26, 26, 26, 0.9);
+        width: 100%;
+        padding: 1rem;
+        gap: 1rem; /* Espaciado entre elementos */
+    }
+
+    .header__nav.active {
+        display: flex; /* Muestra el menú cuando está activo */
+    }
+
+    .header__hamburger {
+        display: block; /* Muestra el botón de hamburguesa */
+    }
 }
