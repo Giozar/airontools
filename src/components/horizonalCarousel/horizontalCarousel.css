@@ -1,0 +1,70 @@
+
+.carousel-container {
+    background: linear-gradient( #1a1a1a,rgba(26, 26, 26, 0.7));
+    width: 100%;
+    max-width: 70vw;
+    margin: 0;
+    padding: 1rem;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    letter-spacing: 2px;
+    text-transform:uppercase;
+}
+
+.carousel {
+    flex: 1;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 200px; 
+    margin: 0 10px;
+    text-align: center;
+}
+
+.carousel-item img {
+    width: 100px; 
+    height: 150px;
+    object-fit:scale-down;
+    display: block;
+    margin: 0 auto;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #000000);
+}
+
+.carousel-item p {
+    margin: 10px 0 0;
+    font-size: 1rem;
+}
+
+.carousel-arrow {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 100;
+    font-size: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.carousel-arrow.prev {
+    left: 0;
+}
+
+.carousel-arrow.next {
+    right: 0;
+}
+
+.carousel-container:hover .carousel-arrow {
+    opacity: 1;
+}

@@ -1,9 +1,10 @@
+
 /* Reset general */
 * {
     box-sizing: border-box;
 }
 
-/* Base de la fuente */
+
 body, html {
     margin: 0;
     padding: 0;

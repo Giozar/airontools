@@ -1,0 +1,26 @@
+---
+import ImageCard from "./ImageCard.astro";
+import { categoryImages } from "@assets/images/imagePaths";
+import './Carousel3D.css'
+const {balancines, dados, neumatica, torque} = categoryImages;
+---
+
+<section class="contenedor">
+    <article id="carousel-container" class="carousel-container">
+        <div id="carousel" class="carousel">
+            <ImageCard imageSrc={balancines} imageAlt='Herramientas de balancines' imageTitle='Balancines' />
+            <ImageCard imageSrc={dados} imageAlt='Herramientas de dados' imageTitle='Dados y Accesorios' />
+            <ImageCard imageSrc={neumatica} imageAlt='Herramientas de neumatica' imageTitle='Herramientas neumaticas' />
+            <ImageCard imageSrc={torque} imageAlt='Herramientas de torque' imageTitle='Herramientas de torque' />
+            <ImageCard imageSrc={balancines} imageAlt='Herramientas de balancines' imageTitle='Balancines' />
+            <ImageCard imageSrc={dados} imageAlt='Herramientas de dados' imageTitle='Dados y Accesorios' />
+            <ImageCard imageSrc={neumatica} imageAlt='Herramientas de neumatica' imageTitle='Herramientas neumaticas' />
+            <ImageCard imageSrc={torque} imageAlt='Herramientas de torque' imageTitle='Herramientas de torque' />
+        </div>
+        <div class="carousel-item-left"></div>
+        <div class="carousel-item-right"></div>
+    </article>
+</section>
+
+
+<script src='./Carousel3D.js'></script>
