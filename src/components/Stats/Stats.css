@@ -1,7 +1,7 @@
 /* Estilo de estadísticas */
 .stats {
-    background-color: rgba(26, 26, 26, 0.7);
-    padding: 1rem;
+    background-color: #80CBF2;
+    padding: 0.2rem;
     display: flex;
     justify-content: space-around;
     max-width: 100%;
@@ -11,6 +11,7 @@
 .stats__item {
     text-align: center;
     margin: 0.3125rem;
+    color: #1a1a1a;
 }
 
 /* Títulos dentro de los elementos de estadísticas */

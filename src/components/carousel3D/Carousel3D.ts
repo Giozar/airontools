@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const carousel: HTMLElement | null = document.getElementById('carousel');
-    const items: HTMLDivElement[] = Array.from(document.querySelectorAll('.carousel-item'));
+    const carousel: HTMLElement | null = document.getElementById('carousel__items');
+    const items: HTMLDivElement[] = Array.from(document.querySelectorAll('.carousel__item'));
     const numItems: number = items.length;
     let rotation: number = 0;
     let isDragging: boolean = false;
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
       items.forEach((item, index) => {
         const angle = calculateAngle(index);
         applyTransform(item, angle);
-        item.classList.remove('focus');
+        item.classList.remove('carousel__item--focus');
       });
   
       focusCenterItem();
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
      * @param angle - Ángulo de rotación.
      */
     const applyTransform = (item: HTMLDivElement, angle: number): void => {
-      item.style.transform = `scaleX(1) rotateY(${angle}deg) translateZ(325px)`;
+      item.style.transform = `scaleX(1) rotateY(${angle}deg) translateZ(350px)`;
     };
   
     /**
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const centerItem = items[centerIndex];
   
       if (centerItem) {
-        centerItem.classList.add('focus');
+        centerItem.classList.add('carousel__item--focus');
       } else {
         console.warn('No central item found to focus.');
       }
@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
     updateCarousel();
   
     // Añadir el manejador de eventos para el carrusel
-    const carouselContainer: HTMLElement | null = document.getElementById('carousel-container');
+    const carouselContainer: HTMLElement | null = document.getElementById('carousel');
     if (carouselContainer) {
       carouselContainer.addEventListener('wheel', handleWheel);
       carouselContainer.addEventListener('mousedown', handleDragStart);

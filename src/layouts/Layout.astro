@@ -33,9 +33,31 @@ const { title } = Astro.props;
 		);
 	}
 	html {
-		font-family: system-ui, sans-serif;
+		font-family: 'Montserrat', system-ui, sans-serif;
 		background: #13151a;
 	}
+	/* Tamaños de fuente globales usando clamp() */
+
+	/* Fuente base */
+	html {
+	font-size: clamp(16px, 1.5vw, 24px);
+	}
+	.hero__heading{
+	font-size: clamp(32px, 5vw, 48px);
+	}
+	h1 {
+	font-size: clamp(24px, 4vw, 36px);
+	}
+	h2 {
+	font-size: clamp(20px, 3vw, 28px);
+	}
+	p {
+	font-size: clamp(14px, 1.2vw, 18px);
+	}
+	small {
+	font-size: clamp(12px, 1vw, 16px);
+	}
+
 	code {
 		font-family:
 			Menlo,

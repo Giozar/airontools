@@ -1,21 +1,35 @@
 ---
 // import {heroVideo} from '@assets/videos/videoPaths'
-import '@components/hero/Hero.css'
+import '@components/hero/Hero2.css'
 import Animation from '@components/animation/animation.astro'
+import RequestQuote from './RequestQuote.astro'
+import { Icon } from 'astro-icon/components'
 ---
 <section class="hero">
     <div class="hero__content">
-        <h1 class="hero__heading">LAS <span>HERRAMIENTAS</span> ELEGIDAS <br> POR LOS <span>PROFESIONALES</span></h1>
-        <p class="hero__paragraph">En AIRON TOOLS nos dedicamos a la fabricación especializada de Herramientas Neumáticas Industriales y Equipos de Torque, así como sus accesorios.</p>
-        <a href="#" class="button button--primary">¡COTIZA AHORA!</a>
-        <a href="#" class="button button--secondary">Más información</a>
+        
+        <div class="hero__column--left">
+            <h1 class="hero__heading">
+                Las <strong>herramientas</strong>  elegidas por los  <strong>profesionales</strong>
+            </h1>
+            <a href="#" class="button button--primary" style="background-color: #FFA500"> <Icon name="mdi:account" />Cotiza Con Nosotros</a>
+            <p class="hero__paragraph">♒︎ En AIRON TOOLS nos dedicamos a la fabricación especializada de Herramientas Neumáticas Industriales y Equipos de Torque, así como sus accesorios.</p>
+            
+        </div>
+        <div class="hero__column--right">
+            <Animation/> 
+        </div>
+        
+     
+        </div>
+        
     </div>
-    <Animation/> 
-    <!--<video class="background-video" controls autoplay loop muted>
-        <source src="path-to-your-hero-video.mp4" type="video/mp4">
+    
+    <!--<video class="background-image" controls autoplay loop muted>
+        <source src={Video} type="video/mov">
         Tu navegador no puede reproducir este video
-    </video> -->
+    </video> 
+       <a href="#" class="button button--secondary">Más información</a>
+            
+           -->
 </section>
-
-
- 

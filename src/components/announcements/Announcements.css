@@ -94,12 +94,3 @@
         gap: 1rem; /* Reduce gap between list and image */
     }
 }
-@media (max-width: 768px) {
-    .anuncios__heading {
-        font-size: clamp(1.5rem, 4vw, 2rem); /* Responsive font size for smaller screens */
-    }
-
-    .anuncios__btn {
-        font-size: clamp(1rem, 3vw, 1.2rem); /* Responsive font size for buttons */
-    }
-}

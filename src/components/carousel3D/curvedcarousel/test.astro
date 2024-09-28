@@ -1,0 +1,123 @@
+<div class="container">
+<section class="main">
+    <div class="outer">
+        <div class="inner">
+            <div class="slide">
+                <img src="https://cdn.pixabay.com/photo/2015/07/28/20/55/tools-864983_640.jpg" alt="">
+            </div>
+        </div>
+        <div class="inner">
+            <div class="slide">
+                <img src="https://cdn.pixabay.com/photo/2015/07/28/20/55/tools-864983_640.jpg" alt="">
+            </div>
+        </div>
+        <div class="inner">
+            <div class="slide">
+                <img src="https://cdn.pixabay.com/photo/2015/07/28/20/55/tools-864983_640.jpg" alt="">
+            </div>
+        </div>
+        <div class="inner">
+            <div class="slide">
+                <img src="https://cdn.pixabay.com/photo/2015/07/28/20/55/tools-864983_640.jpg" alt="">
+            </div>
+        </div>
+        <div class="inner">
+            <div class="slide">
+                <img src="https://cdn.pixabay.com/photo/2015/07/28/20/55/tools-864983_640.jpg" alt="">
+            </div>
+        </div>
+        <div class="inner">
+            <div class="slide">
+                <img src="https://cdn.pixabay.com/photo/2015/07/28/20/55/tools-864983_640.jpg" alt="">
+            </div>
+        </div>
+        <div class="inner">
+            <div class="slide">
+                <img src="https://cdn.pixabay.com/photo/2015/07/28/20/55/tools-864983_640.jpg" alt="">
+            </div>
+        </div>
+        <div class="inner">
+            <div class="slide">
+                <img src="https://cdn.pixabay.com/photo/2015/07/28/20/55/tools-864983_640.jpg" alt="">
+            </div>
+        </div>
+        <div class="inner">
+            <div class="slide">
+                <img src="https://cdn.pixabay.com/photo/2015/07/28/20/55/tools-864983_640.jpg" alt="">
+            </div>
+        </div>
+        <div class="inner">
+            <div class="slide">
+                <img src="https://cdn.pixabay.com/photo/2015/07/28/20/55/tools-864983_640.jpg" alt="">
+            </div>
+        </div>
+        <div class="inner">
+            <div class="slide">
+                <img src="https://cdn.pixabay.com/photo/2015/07/28/20/55/tools-864983_640.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+
+<style>
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+
+.main{
+    position: relative;
+    width: 100%;
+    height: 30vh;
+    overflow: hidden;
+}
+
+.outer{
+    height: 100%;
+    position: absolute;
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;    
+    scroll-snap-type: x mandatory;
+    
+    
+    clip-path: polygon(
+        50% 00%, /* Punto superior medio */
+        100% 25%, /* Punto derecho superior */
+        100% 75%, /* Punto derecho inferior */
+        50% 100%, /* Punto inferior medio */
+        0% 75%, /* Punto izquierdo inferior */
+        0% 25%, /* Punto izquierdo superior */
+        50% 0% /* Regreso al punto superior medio */
+    );
+}
+.inner{
+    position: relative;
+    flex:  0 0 20%;
+    width: 20%;
+}
+
+.outer:nth-child(0) .inner{
+    width: 10%;
+}
+.slide{
+    width: 100%;
+    height:100%;
+    border: 25px solid #000;
+    scroll-snap-align: center;
+
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+    transform: rotate(0deg);
+}
+</style>

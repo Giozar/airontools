@@ -1,37 +1,27 @@
-/* Background Video */
-.background-video {
-    width: 100%; /* Ajusta el ancho al 100% del contenedor */
-    height: auto; /* Ajusta la altura automáticamente */
-    object-fit: cover;
-    --p: 2rem; /* Ajusta el valor de clip-path según sea necesario */
-    aspect-ratio: 3 / 2;
-    clip-path: polygon(var(--p) 0, 100% 0, 100% 100%, 0 100%);
-    margin-left: 0; /* Elimina el margen negativo */
-}
-
 /* Hero Section */
 .hero {
     color: #fff;
-    padding: 0 1rem; /* Ajusta el relleno para pantallas pequeñas */
+    padding: 0 1rem;
     display: flex;
-    flex-direction: row; /* Cambia a columna en pantallas pequeñas */
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: auto; /* Ajusta la altura automáticamente */
+    height: auto;
     position: relative;
     overflow: hidden;
-    max-width: 100vw; /* Ajusta el ancho al 100% de la ventana */
+    max-width: 100vw;
+
 }
 
 /* Hero Content */
 .hero__content {
-    margin: 0; /* Elimina el margen izquierdo */
-    padding: clamp(1rem, 2vw, 2rem); /* Relleno responsive */
+    margin: 0;
+    padding: clamp(1rem, 5vw, 2rem);
 }
 
 /* Hero Heading */
 .hero__heading {
-    font-size: clamp(1.5rem, 4vw, 2.5rem); /* Ajusta el tamaño de fuente */
+    font-size: clamp(2rem, 5vw, 3rem);
     margin-bottom: 1rem;
     letter-spacing: -0.0625rem;
 }
@@ -44,44 +34,24 @@
 .hero__paragraph {
     text-align: justify;
     margin-bottom: 2rem;
-    width: 80%; /* Ajusta el ancho al 100% del contenedor */
-    font-size: clamp(0.875rem, 2vw, 1rem); /* Tamaño de fuente responsive */
+    width: 80%;
+    font-size: clamp(0.875rem, 2vw, 1rem);
 }
 .button--primary{
     margin-right: 0.5rem;
 }
-/* Media Queries */
-@media (max-width: 1400px) {
-    .hero__heading {
-        font-size: clamp(1.75rem, 4vw, 2.5rem); /* Ajusta el tamaño de fuente */
+
+@media (max-width: 1024px) {
+    .hero {
+        padding: 0;
     }
 }
 
 @media (max-width: 1024px) {
     .hero {
-        padding: 0; /* Elimina el relleno */
+        padding: 0;
+        height: auto;
     }
-
-    .background-video {
-        width: 100%;
-        height: auto; /* Ajusta la altura automáticamente */
-        --p: 2rem;
-    }
-}
-
-@media (max-width: 1024px) {
-    .hero {
-        padding: 0; /* Elimina el relleno */
-        height: auto; /* Ajusta la altura automáticamente */
-    }
-
-    .background-video {
-        width: 100%;
-        height: auto; /* Ajusta la altura automáticamente */
-        --p: 2rem;
-        top: 0; /* Asegura que el video esté en la parte superior */
-    }
-
 }
 
 @media (max-width: 450px) {
@@ -91,7 +61,7 @@
     .hero__heading {
         margin-top: -5vh;
         margin-bottom: 5vh;
-        font-size: clamp(3.7rem, 10vh, 2.5rem); /* Tamaño de fuente más grande en pantallas más pequeñas */
+        font-size: clamp(3.7rem, 10vh, 2.5rem);
     }
 
     .hero__content{
@@ -101,7 +71,7 @@
 
     .hero {
         flex-direction: column-reverse;
-        padding: 1rem; /* Ajusta el relleno */
+        padding: 1rem;
     }
 
     .hero__paragraph {
@@ -114,4 +84,8 @@
     .button--primary{
         margin-right: 1rem;
     }
+}
+
+.button--primary{
+    background-color: #fbff00;
 }

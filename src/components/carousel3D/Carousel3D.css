@@ -1,19 +1,24 @@
-.contenedor{
+/* Bloque contenedor principal del carrusel */
+.carousel__container {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.carousel-container {
+
+/* Bloque del contenedor del carrusel */
+.carousel {
     position: relative;
     width: 850px;
     height: 300px;
     overflow: hidden;
     perspective: 1100px;
     user-select: none;
+    transform: rotateY(0deg);
 }
 
-.carousel {
+/* Elemento del carrusel que contiene todos los ítems */
+.carousel__items {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -23,7 +28,8 @@
     transform: rotateY(0deg);
 }
 
-.carousel-item {
+/* Elemento del ítem del carrusel */
+.carousel__item {
     position: absolute;
     width: 250px;
     height: 160px;
@@ -40,7 +46,9 @@
     align-items: center;
     justify-content: center;
 }
-.carousel-item-left {
+
+/* Modificadores para ítems a la izquierda y derecha */
+.carousel__item--left {
     position: absolute;
     width: 50px;
     height: 100px;
@@ -56,7 +64,8 @@
     justify-content: center;
     transform: rotate3d(0, 1, 0, -45deg);
 }
-.carousel-item-right {
+
+.carousel__item--right {
     position: absolute;
     width: 50px;
     height: 100px;
@@ -73,44 +82,33 @@
     justify-content: center;
     transform: rotate3d(0, 1, 0, 45deg);
 }
-.carousel-item img {
+
+/* Elemento de imagen dentro del ítem del carrusel */
+.carousel__item-image {
     height: 100%;
     object-fit: cover;
 }
 
-.text {
+/* Bloque del texto dentro del ítem del carrusel */
+.carousel__item-text {
     padding: 16px;
     color: #ffffff;
     text-align: left;
     flex: 1;
     user-select: all;
 }
-/*
-.carousel-item img {
-    width:  100%;
-    height: 100%;
-    object-fit: cover;
-}
 
-.text {
-    color: #ffffff;
-    text-align: left;
-    flex: 1;
-    position: absolute;
-    z-index: 2;
-    bottom: 0px;
-    background-color: #044197;
-    width: 100%;
-    padding: 0 1rem;
-}
-*/
-.text a {
+/* Estilo del enlace dentro del texto del ítem del carrusel */
+.carousel__item-text a {
     text-decoration: none;
     color: #ffffff;
     font-size: 1.125rem;
     font-weight: 600;
 }
-.focus {
+
+/* Modificador para ítems enfocados */
+.carousel__item--focus {
     transform: scaleX(0.5);
 }
+
 
