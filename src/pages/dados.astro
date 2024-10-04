@@ -1,0 +1,35 @@
+---
+import Layout from "@layouts/Layout.astro";
+---
+
+<Layout title="dados">
+    <div class="iframe-container">
+        <iframe src="http://localhost:5001" frameborder="0"></iframe>
+      </div>      
+</Layout>
+
+<style>
+    html, body {
+  height: 100%; /* Asegurarse de que el cuerpo y el HTML ocupen todo el alto */
+  margin: 0;    /* Eliminar márgenes por defecto */
+}
+
+.iframe-container {
+  position: relative;  /* Hacer que el contenedor sea relativo */
+  width: 100vw;        /* Ancho completo de la ventana */
+  height: 100vh;       /* Alto completo de la ventana */
+  overflow: hidden;    /* Ocultar scrollbars */
+  background-color: beige;
+}
+
+iframe {
+  position: absolute;   /* Posicionamiento absoluto para ocupar todo el contenedor */
+  top: 0;               /* Alinear al tope */
+  left: 0;              /* Alinear a la izquierda */
+  width: 100%;         /* Ancho completo del contenedor */
+  height: 100%;        /* Alto completo del contenedor */
+  border: none;        /* Eliminar borde */
+  overflow: hidden;    /* Ocultar scrollbars dentro del iframe */
+}
+
+</style>

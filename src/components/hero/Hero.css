@@ -17,7 +17,7 @@
     flex-direction: row; /* Cambia a columna en pantallas pequeñas */
     justify-content: center;
     align-items: center;
-    height: auto; /* Ajusta la altura automáticamente */
+    height: 100vh; /* Ajusta la altura al 100 del viewport */
     position: relative;
     overflow: hidden;
     max-width: 100vw; /* Ajusta el ancho al 100% de la ventana */

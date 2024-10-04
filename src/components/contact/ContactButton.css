@@ -1,18 +1,20 @@
 .sticky-btn {
     position: fixed;
     left: 20px;
-    bottom: 9vh;
+    bottom: 1rem;
     background-color: #13e744;
-    padding: 0.75rem 1.5rem;
-    border-radius: 50px;
+    padding: 0.75rem 0.75rem;
+    border-radius: 50%;
     display: flex;
+    justify-content: center;
     align-items: center;
     text-decoration: none;
     box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
-    z-index: 1000;
+    z-index: 1;
     transition: background-color 0.3s ease;
-    color: #1a1a1a;
+    color: #ffffff;
     text-align: center;
+    flex-direction: column;
 }
 
 /* Sticky Button Hover Effect */
@@ -22,15 +24,14 @@
 
 /* Sticky Button Icon */
 .sticky-btn__icon {
-    margin-right: 0.5rem;
-    font-size: 1.2rem;
+    font-size: .8rem;
 }
 
 /* Sticky Button Text */
-.sticky-btn__text { 
+.sticky-btn__text {
     font-weight: bold;
     color: #1a1a1a;
-    font-size: 1.1rem;
+    font-size: .5rem;
 }
 
 /* Responsive Styles for screens up to 1400px */
@@ -38,17 +39,20 @@
     .sticky-btn {
         margin-left: -10px;
     }
+
     .sticky-btn__icon {
         margin-right: 0;
     }
-    .sticky-btn__text { 
+
+    .sticky-btn__text {
         display: none;
     }
 }
+
 @media (max-width: 450px) {
     .sticky-btn {
         left: 85vw;
         bottom: 20vh;
     }
-    
+
 }

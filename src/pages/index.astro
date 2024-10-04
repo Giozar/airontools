@@ -3,8 +3,6 @@ import Layout from '@layouts/Layout.astro'
 import '../styles/index.css'
 import Waves from '@components/main/Waves.astro'
 import Announcements from '@components/announcements/Announcements.astro'
-import Footer from '@components/footer/Footer.astro'
-import Header from '@components/header/Header.astro'
 import Hero from '@components/hero/Hero.astro'
 import ContactButton from '@components/contact/ContactButton.astro'
 import Stats from '@components/Stats/Stats.astro'
@@ -15,9 +13,6 @@ import CourierServices from '@components/courierService/CourierServices.astro'
 ---
 
 <Layout title="AironTools">
-	<Header/>
-	<main>
-		
 		<!--Boton de contacto flotante -->
 		<ContactButton/>
 		<!--Fondo de olas -->
@@ -30,7 +25,5 @@ import CourierServices from '@components/courierService/CourierServices.astro'
 		<Services/>        
 		<Testimonials/>    
 		<CourierServices/>
-		<!--<ContactUs/>-->  
-		<Footer/>           
-	</main>
+		<!--<ContactUs/>-->          
 </Layout>
