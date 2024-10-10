@@ -27,13 +27,6 @@
     font-size: .8rem;
 }
 
-/* Sticky Button Text */
-.sticky-btn__text {
-    font-weight: bold;
-    color: #1a1a1a;
-    font-size: .5rem;
-}
-
 /* Responsive Styles for screens up to 1400px */
 @media (max-width: 1400px) {
     .sticky-btn {

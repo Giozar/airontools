@@ -25,6 +25,8 @@
 
 /* Hero Content */
 .hero__content {
+    display: grid;
+    gap: 1rem;
     margin: 0; /* Elimina el margen izquierdo */
     padding: clamp(1rem, 2vw, 2rem); /* Relleno responsive */
 }
